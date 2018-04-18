@@ -30,6 +30,8 @@ build/
 local.properties
 *.iml
 
+app/src/main/res/values/strings.xml
+
 # node.js
 #
 node_modules/
