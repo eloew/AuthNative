@@ -18,7 +18,7 @@ export default class HomeScreen extends React.Component {
   static navigationOptions = ({navigation})=> {
       const { params = {} } = navigation.state;
       return {
-      title: 'Auth Nativer',
+      title: 'Auth Native',
       headerRight: ( 
         <View style={navStyle.twoButtonView}>
           <TouchableOpacity onPress={() => navigation.state.params.handleAccount()}  style={{ marginRight: 6, }}>
