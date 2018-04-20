@@ -20,8 +20,8 @@ $ npm install
 $ react-native run-android
 
 
-Here are the versions of the pieces to create this project:
-•	React native version: 0.55.2
-•	Facebook Android sdk: 4.17.0
-•	Android compileSdkVersion: 23
+Here are the versions of the pieces to create this project
+React native version: 0.55.2
+Facebook Android sdk: 4.17.0
+Android compileSdkVersion: 23
 These versions get along nice with the project I created below with react-native init. As you well know, different version can lead to different results.
