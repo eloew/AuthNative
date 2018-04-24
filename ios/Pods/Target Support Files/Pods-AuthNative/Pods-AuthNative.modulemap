@@ -1,0 +1,6 @@
+framework module Pods_AuthNative {
+  umbrella header "Pods-AuthNative-umbrella.h"
+
+  export *
+  module * { export * }
+}
