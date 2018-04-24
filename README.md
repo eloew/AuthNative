@@ -45,3 +45,11 @@ Android compileSdkVersion: 23
 
 These versions get along nice with the project I created below with react-native init. As you well know, different version can lead to different results.
 
+Right click the ios/AuthNative/info.plist file and choose Open As > Source Code
+<key>FacebookAppID</key>
+<string>0000000000000000</string>
+
+Change the FacebookAppID to your App Id
+
+
+
