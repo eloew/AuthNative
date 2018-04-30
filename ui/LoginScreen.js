@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import FacebookLogin from './auth/facebook/LoginButton';
-
+import GoogleLogin from './auth/GoogleLoginButton';
  
 export default class LoginScreen extends React.Component {
   constructor() {
@@ -35,6 +35,28 @@ export default class LoginScreen extends React.Component {
             }
           }
           onLogout={() => alert("logged out")}
+      />
+      <GoogleLogin 
+          onLogin={
+            (result) => {
+              console.log('Google onLogin')
+              if (result.message) {
+                alert('error: ' + result.message)
+              } else {
+                alert("Login was successful " + result.name +  ' - ' + result.email)
+              }
+            }
+          }
+          onLogout={() => alert("logged out")}
+          onError={
+            (result) => {
+              if (result.error) {
+                alert('error: ' + result.error)
+              } else {
+                alert("error")
+              }
+            }
+          }
       />
     </View>
   );
